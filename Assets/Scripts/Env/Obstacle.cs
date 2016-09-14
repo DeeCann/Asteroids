@@ -17,7 +17,7 @@ public class Obstacle : MonoBehaviour {
 
 	void Start() {
 		switch(PlayerPrefs.GetInt("Diff")) {
-		case 0: _obstacleSpeed = 0.01f; break;
+		case 0: _obstacleSpeed = 0.02f; break;
 		case 1:	_obstacleSpeed = 0.04f; break;
 		case 2:	_obstacleSpeed = 0.06f; break;
 		}
