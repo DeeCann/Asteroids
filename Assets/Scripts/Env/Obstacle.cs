@@ -35,6 +35,9 @@ public class Obstacle : MonoBehaviour {
 	}
 
 	public void Explode( float _distance ) {
+		if(!GetComponentInChildren<MeshRenderer>().isVisible)
+			return;
+		
 		StartCoroutine(ExlodeCorutine(_distance));
 	}
 		
